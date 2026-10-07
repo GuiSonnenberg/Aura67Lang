@@ -1,0 +1,4 @@
+-- Teste 3: erro lexico -- caractere invalido '$'
+COMECA_A_FARMAR
+    RIZZ aura_total = 5$;
+FIM_DA_FARM

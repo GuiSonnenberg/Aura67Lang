@@ -1,0 +1,5 @@
+-- Teste 5: erro semantico -- uso de variavel nao declarada
+COMECA_A_FARMAR
+    RIZZ rizz = 3;
+    aura_total = rizz + 1;
+FIM_DA_FARM

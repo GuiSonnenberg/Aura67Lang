@@ -1,0 +1,5 @@
+-- Teste 4: erro sintatico -- falta a virgula obrigatoria em FARMA_AURA
+COMECA_A_FARMAR
+    AURA aura = 10.0;
+    FARMA_AURA aura 5;
+FIM_DA_FARM

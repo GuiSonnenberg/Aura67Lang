@@ -1,0 +1,39 @@
+-- Teste 2: caso valido completo
+-- laco, FARMA_AURA/PAGA_TAXA, as duas formas de condicional, E/S,
+-- precedencia aritmetica e o literal SEISSETE
+COMECA_A_FARMAR
+    AURA aura = 0.0;
+    RIZZ contador = 0;
+    RIZZ sorte = SEISSETE;
+    RIZZ bonus = 0;
+
+    FLEXA("A sorte de hoje (seissete aleatorio): ");
+    FLEXA(sorte);
+
+    FLEXA("Digite um bonus de aura (inteiro): ");
+    CAPTA_A_VIBE(bonus);
+
+    ENQUANTO_FARMANDO (contador < 5) FARMA
+        FARMA_AURA aura, 2 + 3 * 2;
+        FARMA_AURA contador, 1;
+    PARA_DE_FARMAR
+
+    FARMA_AURA aura, bonus;
+
+    FLEXA("Aura apos o loop: ");
+    FLEXA(aura);
+
+    SE_TEM_AURA (aura > 20 COMBO contador == 5) FARMA
+        FLEXA("Aura alta e loop completo!\n");
+    PARA_DE_FARMAR SENAO FARMA
+        FLEXA("Continue farmando...\n");
+    PARA_DE_FARMAR
+
+    SE_FOR_SEISSETE (aura / 2) FARMA
+        FLEXA("O valor metade da aura deu 6 ou 7!\n");
+    PARA_DE_FARMAR SENAO FARMA
+        FLEXA("Nao deu seissete dessa vez.\n");
+    PARA_DE_FARMAR
+
+    PAGA_TAXA aura, 100.0;
+FIM_DA_FARM

@@ -1,0 +1,12 @@
+-- Teste 1: caso valido basico
+-- declaracao, atribuicao e saida simples
+COMECA_A_FARMAR
+    RIZZ idade = 20;
+    AURA aura = 10.5;
+
+    FLEXA("Bem-vindo ao AURA67!\n");
+    FLEXA("Idade: ");
+    FLEXA(idade);
+    FLEXA("Aura inicial: ");
+    FLEXA(aura);
+FIM_DA_FARM
